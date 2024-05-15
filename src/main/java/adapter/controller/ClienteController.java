@@ -1,4 +1,4 @@
-package adapter;
+package adapter.controller;
 
 public class ClienteController {
 }
