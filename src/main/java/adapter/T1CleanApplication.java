@@ -1,4 +1,5 @@
-package com.leet.t1_clean;
+package adapter;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
