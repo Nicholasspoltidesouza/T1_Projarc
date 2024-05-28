@@ -1,4 +1,4 @@
 package application.dto;
 
-public record ClienteDTO() {
+public record ClienteDTO(Long id, String nome, String email) {
 }

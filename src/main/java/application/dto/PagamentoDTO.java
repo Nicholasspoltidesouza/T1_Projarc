@@ -1,4 +1,6 @@
 package application.dto;
 
-public record PagamentoDTO() {
+import lombok.Data;
+
+public record PagamentoDTO(Long id, AssinaturaDTO assinatura, float valor, Data dataPagamento, String promocao) {
 }

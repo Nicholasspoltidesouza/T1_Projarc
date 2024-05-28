@@ -1,4 +1,7 @@
 package application.dto;
 
-public record AssinaturaDTO() {
+import lombok.Data;
+
+public record AssinaturaDTO(Long id, AplicativoDTO aplicativo, ClienteDTO cliente, Data inicioVigencia,
+        Data fimVigencia) {
 }
