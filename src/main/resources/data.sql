@@ -1,0 +1,1 @@
+insert into clientes (id, nome, email) values (1, 'Maria', 'maria@gmail.com');

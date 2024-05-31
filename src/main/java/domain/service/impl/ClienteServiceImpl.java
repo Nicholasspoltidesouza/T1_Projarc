@@ -1,7 +1,6 @@
 package domain.service.impl;
 
 import java.util.Collection;
-import java.util.List;
 
 import org.springframework.stereotype.Service;
 
@@ -14,7 +13,6 @@ import lombok.RequiredArgsConstructor;
 @Service
 public class ClienteServiceImpl implements ClienteService {
     private final ClienteRepository clienteRepository;
-    private final ClienteService clienteService;
 
     @Override
     public Collection<Cliente> listaTodosClientes() {

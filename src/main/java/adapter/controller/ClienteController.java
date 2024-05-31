@@ -18,9 +18,9 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.RequiredArgsConstructor;
 
-@RequiredArgsConstructor
-@RequestMapping("/servcad")
 @RestController
+@RequestMapping("/servcad")
+@RequiredArgsConstructor
 public class ClienteController {
     private final ListaTodosClientesUC listaTodosClientesUC;
 
@@ -29,9 +29,8 @@ public class ClienteController {
             @ApiResponse(responseCode = "200", content = @Content(mediaType = MediaType.APPLICATION_JSON_VALUE, array = @ArraySchema(schema = @Schema(implementation = ClienteDTO.class))), description = "Clientes listados com sucesso"),
             @ApiResponse(responseCode = "500", description = "Erro interno do servidor")
     })
-    @GetMapping("/clientes")
+    @GetMapping("clientes")
     public ResponseEntity<Collection<ClienteDTO>> listarClientes() {
         return ResponseEntity.ok(listaTodosClientesUC.run());
-
     }
 }
